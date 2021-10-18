@@ -380,7 +380,7 @@ figure img:hover{
   .insta-samples-wrapper{
       padding:0px 1em;
       display:flex;
-      width:100%;
+      
       min-width: 0;
       justify-content: space-between;
       
