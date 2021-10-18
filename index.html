@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script type = 'text/javascript' src='index.js'></script>
+    </head>
+    <body>
+        <!-- NAV SECTION -->
+        <div class="screen-player imageOne" id='home'>
+            <div class="quotes-wrapper">
+                   <div class='quotes' id='quotes'>
+                    If I get married, <br/>I want to be very married
+                   </div> 
+                
+            </div>
+            <div class="screen-controller">
+                
+                <div class="controller-buttons-wrapper" id='controller'>
+                    <div class="single-button-wrapper" onclick="screenPlayer(0)" style='border:1px solid white'>
+                        <div class='controller-button'>
+                        </div>
+                    </div>
+                    <div class="single-button-wrapper" onclick="screenPlayer(1)">
+                        <div class='controller-button'>
+                        </div>
+                    </div>
+                    <div class="single-button-wrapper" onclick="screenPlayer(2)">
+                        <div class='controller-button'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-wrapper">
+            <div class="icon">
+                <img src="./resources/icon.png" alt="abcd" width="150px">
+                
+            </div>
+            <div class="nav-link-wrapper" id='nav'>
+                <div class="nav-link">
+                    <a href='#home'>Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href='#gallery'>Gallery</a>
+                </div>
+                <div class="nav-link">
+                    <a href='#about-me'>About</a>
+                </div>
+                <div class="nav-link">
+                    <a href='#contact'>Contact</a>
+                </div>
+            </div>
+            <div class="side-icon" onclick="openNav()">
+                <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png"/>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <div href="javascript:void(0)" class=" closebtn" onclick="closeNav()">&times;</div>
+                <a href='#home'>Home</a>
+                <a href='#gallery'>Gallery</a>
+                <a href='#about-me'>About</a>
+                <a href='#contact'>Contact</a>
+              </div>
+        </div>
+
+
+        <div class="samples-pictures-wrapper" id='samples-picture-wrapper'>
+            <div class='center' style='display:block'>
+                <div class="sample-heading">
+                    CREATING
+                    MEMORIES
+                </div>
+                <div class ='sample-heading' style='padding-top:100px;'>
+                    <figure>
+                        <img src="./resources/sample-pictures/sample1.jpg" alt="sample-picture1" width='500px'>
+                    </figure>
+                </div>
+                <div class='special-notes' style='padding-left: 1em;text-align: center;'>
+                    I don’t just take a photograph, <br/>I tell stories.
+                </div>
+                <div class='sample-heading' style='display:block'>
+                    <div style='padding-top:100px;'>
+                        <figure>
+                            <img src="./resources/sample-pictures/sample3.jpg" alt="sample-picture3" width='500px'>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <div class='center'>
+                    <figure>
+                        <img src="./resources/sample-pictures/sample2.jpg" alt="sample-picture2" width='500px'>
+                    </figure>
+                </div>
+                <div class='special-notes'>
+                    A promise of capturing all your happy moments..
+                </div>
+                <div class='center' style='display:block'>
+                    <div class ='' style='padding-top:100px;'>
+                        <figure>
+                            <img src="./resources/sample-pictures/sample4.jpg" alt="sample-picture4" width='550px' height='550px'>
+                        </figure>
+                    </div>
+                </div>
+                <div class='special-notes-2' >
+                    <span style='font-size:.5em'>
+                        With
+                    </span> love 
+                    <span style='font-size:.5em'>
+                        &
+                    </span> passion
+                </div>
+
+            </div>
+        </div>
+        
+
+        <div class="sample-heading" style='padding-top:3em;line-height:0.5em' id='gallery' >
+            GALLERY<br>
+            <span class="sub-heading" style='font-size:.5em'>
+                some of my work samples
+            </span>
+        </div>
+        
+
+        <div class="gallery">
+            <div class="container">
+                <div class=" gallery-image Photo1">
+                    <img src="./resources/gallery/gallery1.jpg" alt="">
+                </div>
+                <div class=" gallery-image Photo2">
+                    <img src="./resources/gallery/gallery2.jpg" alt="">    
+                </div>
+                <div class=" gallery-image Photo3">
+                    <img src="./resources/gallery/gallery3.jpg" alt="">    
+                </div>
+                <div class=" gallery-image Photo4">
+                    <img src="./resources/gallery/gallery4.jpg" alt="">    
+                </div>
+                <div class=" gallery-image Photo5">
+                    <img src="./resources/gallery/gallery5.jpg" alt="">    
+                </div>
+                <div class=" gallery-image Photo6">
+                    <img src="./resources/gallery/gallery6.jpg" alt="">    
+                </div>
+                <div class=" gallery-image Photo7">
+                    <img src="./resources/gallery/gallery7.jpg" alt="">    
+                </div>
+                <div class=" gallery-image Photo8">
+                    <img src="./resources/gallery/gallery8.jpg" alt="">    
+                </div>
+                <div class=" gallery-image Photo9">
+                    <img src="./resources/gallery/gallery9.jpg" alt="">    
+                </div>
+                <div class=" gallery-image Photo10">
+                    <img src="./resources/gallery/gallery10.jpg" alt="">    
+                </div>
+                <div class=" gallery-image Photo11">
+                    <img src="./resources/gallery/gallery11.jpg" alt="">    
+                </div>
+                <div class=" gallery-image Photo12">
+                    <img src="./resources/gallery/gallery12.jpg" alt="">    
+                </div>
+                
+              </div>
+        </div>
+        
+
+        <div class="sample-heading">
+            <div class="sub-heading">
+                Want to see more of my work?? 
+            </div>
+        </div>
+
+        <div class="instagram " id='about-me'>
+            <div>
+                FIND ME ON INSTAGRAM<br/>
+                <a href="https://www.instagram.com/mkpasa182/" target="_blank">
+                    @mkpasa182
+                </a>
+            </div>
+            <div class="insta-samples-wrapper">
+                <div class="insta-samples">
+                    <img src="./resources/instagram/insta1.jpg" alt="insta1">
+                </div>
+                <div class="insta-samples">
+                    <img src="./resources/instagram/insta2.jpg" alt="insta2">
+                </div>
+                <div class="insta-samples">
+                    <img src="./resources/instagram/insta3.jpg" alt="insta3">
+                </div>
+                <div class="insta-samples">
+                    <img src="./resources/instagram/insta4.jpg" alt="insta4">
+                </div>
+                <div class="insta-samples">
+                    <img src="./resources/instagram/insta5.jpg" alt="insta5">
+                </div>
+                <div class="insta-samples">
+                    <img src="./resources/instagram/insta6.jpg" alt="insta6">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="instagram about-me " id='about-me'>
+            <div class="profile">
+                <div class='profileimage'>
+                    <img src="./resources/profile_picture.jpg" alt="profile_picture" width='200px' class='profileImage'>
+                </div>
+                <div class='profileDetails'>
+                    Bal Kumar<br/>
+                    <span >
+                        Wedding Photographer
+                    </span>
+                </div>
+            </div>
+            <div class="experience">
+                <div>
+                    <div class='strengths'>
+                        <div class='experience-number'>
+                            3+
+                        </div>
+                        <div>
+                            YEARS OF EXP
+                        </div>
+                    </div>
+                    <div class='strengths'>
+                        <div class='experience-number'>
+                            72+
+                        </div>
+                        CEREMONIES
+                        
+                    </div>
+                </div>
+                <div>
+                    <div class='strengths'>
+                        <div class='experience-number'>
+                            49+
+                        </div>
+                        HAPPY COUPLES
+                        
+                    </div>
+                    <div class='strengths'>
+                        <div class='experience-number'>
+                            5000+
+                        </div>
+                         MEMORIES CLICKED
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="get-in-touch-wrapper" id='contact'>
+            <div class="sample-heading get-in-touch "  >
+                GET IN TOUCH
+                <div class="sub-heading" style='font-size:.5em'>
+                    send me any queries you have
+                </div>
+            </div>
+
+            <div class="form-wrapper">
+                <form action="" class=''>
+                    <div>
+                        <div class='form-row'>
+                            <div class="input">
+                                <input type="text" id='username' placeholder="YOUR NAME"/>
+                            </div>
+                            <div class="input">
+                                <input type="email" id='email' placeholder="YOUR EMAIL"/>
+                            </div>
+                        </div>
+                        
+                       <div class='form-row'>
+                        <div>
+                            <input type="text" id='wedding-date' placeholder='WEDDING DATE'/>
+                        </div>
+                        <div>
+                            <input type="text" id='wedding-address' placeholder='WEDDING ADDRESS'/>
+                        </div>
+                       </div>
+                    </div>
+                    <div class='form-row' style='justify-content: left;'>
+                        <div>
+
+                            <textarea  id="tell-us-more"  placeholder="TELL SOMETHING MORE..." class='text-area'/></textarea>
+                        </div>
+                    </div>
+
+                    <div class='form-row'>
+                        <button class='submit' type='submit'>SEND</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+
+        <footer class='footer-wrapper'>
+            <div class="services">
+                <div class='single-services'>
+                    <div class='service-image'>
+                        <img src="https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png"/>
+                    </div>
+                    <div class='service-type'>
+                        Photoshoots
+                    </div>
+                    
+                </div>
+                <div class='single-services'>
+                    <div >
+                        <img src="https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png"/>
+                    </div>
+                    <div class='service-type'>
+                        Videoshoots
+                    </div>
+                </div>
+                <div class='single-services'>
+                    <div >
+                        <img src="https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png"/>
+                    </div>
+                    <div class='service-type'>
+                        Prewedding shoots
+                    </div>
+                </div>
+                <div class='single-services'>
+                    <div >
+                        <img src="https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png"/>
+                    </div>
+                    <div class='service-type'>
+                        Postwedding shoots
+                    </div>
+                </div>
+                <div class='single-services'>
+                    <div >
+                        <img src="https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png"/>
+                    </div>
+                    <div class='service-type'>
+                        Mehendi shoots
+                    </div>
+                </div>
+                <div class='single-services'>
+                    <div >
+                        <img src="https://img.icons8.com/material-outlined/24/000000/checkmark--v1.png"/>
+                    </div>
+                    <div class='service-type'>
+                        Editing
+                    </div>
+                </div>
+                <div class='single-services'>
+                    
+                    <div class='service-type'>
+                        and much more to offer...
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <img src = "./resources/footer.svg" alt="My Happy SVG" width='200px' />
+            </div>
+            <div class="social-sites">
+                <div class='footer-mail'>
+                    Email: balkumar@gmail.com<br>
+                    Phone: 9891239123
+                </div>
+                <div class='footer-text'>
+                    FIND ME THROUGH
+                </div>
+                <div class='social-icons'>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png" />
+                    </a>
+                    <a href="https://instagram.com" target="_blank" >
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/>
+                    </a>
+                </div>
+            </div>
+            
+        </footer>
+        <div  class='copyright-text'>
+            &#169;<label id='date'></label>, All Rights Reserved.
+        </div>
+        </body>
+        <script>
+            var dt = new Date();
+            document.getElementById("date").innerHTML = dt.getFullYear();
+        </script>
+            
+            
+</html>
