@@ -2,13 +2,15 @@
 var currentIndex = 0
 var previousIndex = 0;
 function screenPlayer(index){
-    console.log('clicked')
+    if (index==100){
+      index=currentIndex+1
+    }
     document.querySelector('#controller').children[previousIndex].style.borderColor = 'transparent'
     var className = ['imageOne','imageTwo','imageThree']
     var quotes =[
-        'Grow old with me! <br/>The best is yet to be.',
-        'Love is a smoke made with<br/> the fume of sighs.',
-        'If I get married, <br/>I want to be very married.'
+        'A photograph is the <br/>pause button of life',
+        'photography is the story <br/>i fail to put into words',
+        'photography is a love affair with life'
     ]
     currentIndex = index
     if (currentIndex >2){
@@ -32,3 +34,10 @@ function screenPlayer(index){
     document.getElementById("mySidenav").style.width = "0";
   }
 
+
+  const interval = setInterval(function() {
+    screenPlayer(100)
+  }, 6000);
+  
+
+  
