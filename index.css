@@ -141,6 +141,9 @@ a{
     border-radius :50%;
 }
 
+#mySidenav{
+    width:0px;
+}
 
 .controller-button{
     position:relative;
@@ -239,7 +242,7 @@ a{
         display: inherit !important;
     }
     .sample-heading{
-        padding-left:10px !important;
+        /* padding-left:10px !important; */
     }
     #gallery{
         padding-bottom:40px;
@@ -579,9 +582,7 @@ figure img:hover{
     .social-icons{
         justify-content: center;
     }
-    .single-services{
-        padding-left:10px;
-    }
+    
 }
 
 .form-row{
@@ -666,6 +667,7 @@ textarea:focus, input:focus{
 .single-services{
     display:flex;
     align-items: center;
+    padding-left:10px;
 
 }
 .service-type{
