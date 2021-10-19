@@ -238,6 +238,12 @@ a{
     .samples-pictures-wrapper{
         display: inherit !important;
     }
+    .sample-heading{
+        padding-left:10px !important;
+    }
+    #gallery{
+        padding-bottom:40px;
+    }
   }
 
 .sample-heading{
@@ -394,7 +400,7 @@ figure img:hover{
       justify-content: space-between;
       
   }
-  @media  only screen and (max-width:740px){
+  @media  only screen and (max-width:1000px){
     .insta-samples-wrapper{
         padding:0px 0px;
         display:flex;
@@ -430,10 +436,14 @@ figure img:hover{
         margin:0px;
     }
     .special-notes{
-        padding-top: 0em;
+        padding:20px 10px 0px 10px;
     }
     .container div{
         overflow: inherit !important;
+    }
+    .footer-mail{
+        padding-top:20px !important;
+        
     }
 }
 
@@ -541,7 +551,7 @@ figure img:hover{
 /* FORM */
 
 .form-wrapper{
-    border:1px solid #e1e1e1;
+    
     box-sizing: border-box;
     margin:50px 100px; 
     padding:50px;
