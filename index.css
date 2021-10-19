@@ -260,6 +260,7 @@ a{
     font-family: courgette,sans-serif;
     font-size: 2em;
     padding-top:3em;
+    text-align: center;
 
 }
 .special-notes-2{
@@ -268,10 +269,12 @@ a{
     font-size: 5em;
     padding-top:.3em;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 figure{
     overflow:hidden;
+    text-align: center;
 }
 
 figure img {
@@ -287,7 +290,9 @@ figure img:hover{
 }
 
 
-
+.sample-picture{
+    width:100%;
+}
 
 
 
@@ -329,8 +334,12 @@ figure img:hover{
     
 }
 
+.gallery-images{
+    width:100%;
+}
+
 .gallery .container div{
-    border:2px solid rgb(209, 209, 209);
+    /* border:2px solid rgb(209, 209, 209); */
     display:flex;
     justify-content: center;
     overflow: hidden;
@@ -419,6 +428,12 @@ figure img:hover{
     }
     .strengths{
         margin:0px;
+    }
+    .special-notes{
+        padding-top: 0em;
+    }
+    .container div{
+        overflow: inherit !important;
     }
 }
 
@@ -528,17 +543,39 @@ figure img:hover{
 .form-wrapper{
     border:1px solid #e1e1e1;
     box-sizing: border-box;
-    margin:50px 100px;
+    margin:50px 100px; 
     padding:50px;
     display: flex;
     justify-content: center;
     
 }
 
+
+@media  only screen and (max-width:740px){
+    .form-wrapper{
+        margin:0px;
+        padding:0px;
+    }
+    .get-in-touch-wrapper{
+        padding: 5em 0em 0em 0em;
+    }
+    .form-row{
+        display:block !important;
+    }
+    .footer-wrapper{
+        display:block !important;
+        text-align: center;
+    }
+    .social-icons{
+        justify-content: center;
+    }
+    .single-services{
+        padding-left:10px;
+    }
+}
+
 .form-row{
     display:flex;
-    /* justify-content: center; */
-    
 }
 
 .form-row div{
@@ -575,7 +612,8 @@ textarea:focus, input:focus{
     border-bottom:1px solid #e1e1e1;
     background-color: transparent;
     color:#84847c;
-    min-width:max(100%,500px);
+    min-width: 100%;
+    max-width: 500px;
     min-height:100px;
 
 }
@@ -657,4 +695,8 @@ textarea:focus, input:focus{
     letter-spacing: 0px;
     background-color: white;
     text-align: center;
+}
+
+.footer-logo{
+    width:min(200px,33%);
 }
