@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap');
 @import url("https://use.typekit.net/xly5qsy.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 html {
     scroll-behavior: smooth;
   }
@@ -10,7 +12,7 @@ body{
     margin:0px;
     height:100%;
     width: 100%;
-    background-color : rgba(229, 231, 226, 1);
+    /* background-color : #056476; */
 }
 
 a{
@@ -41,24 +43,20 @@ a{
 
 .nav-wrapper{
     position:absolute;
-    top:0;
-    left:0;
-    display:flex;
     width:100%;
-    justify-content:space-between;
+    justify-content:center;
     font:13px sans-serif;
     letter-spacing: 3px;
     line-height: 25px;
-    font-weight: 500;
     text-transform: uppercase;
     align-items: center;
-    padding-top: 20px;
+    padding: 10px 0px;
 }
-
 
 
 .nav-link-wrapper{
     display:flex;
+    justify-content: center;
 }
 
 .nav-link{
@@ -87,6 +85,13 @@ a{
     transition: transform 0.2s ease-out;
 }
 
+
+#nav-link-clicked{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
 .side-icon{
     text-align: center;
 }
@@ -96,11 +101,15 @@ a{
     overflow:hidden;
     height:100vh;
     width:100%;
-    -webkit-transition: background-image 0.7s ease-in-out;
-    transition: background-image 0.7s ease-in-out;
+    opacity: 1;
     
 }
 
+
+.icon{
+    width:120px;
+    border-radius: 100px;
+}
 .imageOne{
     background-image: url('./resources/screen-player/image1.jpg');
     background-position: center;
@@ -155,30 +164,45 @@ a{
     border-radius: 2px;
 }
 .quotes-wrapper{
-    top:0;
-    left:0;
     height:100%;
-    position:relative;
-    box-sizing: border-box;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-
 }
 .quotes{
+    position: absolute;
+    bottom:0;
+    width:100%;
     text-align: center;
-    font-family: sans-serif; 
-    font-size: 2.5em;
-    letter-spacing:0.1em;
-    color:black;
-    text-transform: uppercase;
-    /* font-style: italic; */
-    font-weight: bolder;
-    line-height: 1.5em;
-    vertical-align: middle;
-    
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
+.quotes-text{
+    font-family: pacifico; 
+    font-size: 3em;
+    color:#0E97A5;
+    line-height: normal;
+}
+
+.quotes-button{
+    cursor: pointer;
+    color:#0E97A5;
+    background-color:  #E7C86E;
+    border:1px solid  #0E97A5;
+    padding:6px 13px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin:10px;
+    font-weight: bolder;
+    
+}
+.quotes-button a{
+    color:#0E97A5;
+}
+
+.quotes-button:hover{
+    background-color: #e6bf72;
+    /* border:1px solid #0E97A5; */
+}
 
 
 .sidenav {
@@ -242,8 +266,10 @@ a{
         display: inherit !important;
     }
     .quotes{
-        font-size:1.5em !important;
-        padding:10px;
+        font-size:10px !important;
+    }
+    .icon{
+        width:70px;
     }
     #gallery{
         padding-bottom:40px;
@@ -310,9 +336,8 @@ figure img:hover{
 /* Gallery */
 
 .gallery{
-    display: flex;
-    justify-content: center;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .container {

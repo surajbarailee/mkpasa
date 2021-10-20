@@ -7,11 +7,11 @@ function screenPlayer(index){
     }
     document.querySelector('#controller').children[previousIndex].style.borderColor = 'transparent'
     var className = ['imageOne','imageTwo','imageThree']
-    var quotes =[
-        'A photograph is the <br/>pause button of life',
-        'photography is the story <br/>i fail to put into words',
-        'photography is a love affair with life'
-    ]
+    // var quotes =[
+    //     'A photograph is the <br/>pause button of life',
+    //     'photography is the story <br/>i fail to put into words',
+    //     'photography is a love affair with life'
+    // ]
     currentIndex = index
     if (currentIndex >2){
         currentIndex = 0;
@@ -19,7 +19,7 @@ function screenPlayer(index){
     className = 'screen-player ' + className[currentIndex]
     document.getElementById('home').className = className
     document.querySelector('#controller').children[currentIndex].style.borderColor = 'white'
-    document.getElementById('quotes').innerHTML = quotes[currentIndex]
+    // document.getElementById('quotes').innerHTML = quotes[currentIndex]
 
     previousIndex=currentIndex
   }
