@@ -10,23 +10,24 @@ html {
   }
 body{
     margin:0px;
-    height:100%;
-    width: 100%;
-    /* background-color : #056476; */
+    
+    background-color : rgb(14,151,165);
 }
 
 a{
     text-decoration: none;
-    color:black
+    color:gold;
 }
 
 /* NAV WRAPEER */
-
 
 .side-icon{
     cursor: pointer;
     width:100px;
     visibility:hidden;
+    padding-top:10px;
+    float: right;
+    
 }
 
 @media  only screen and (max-width:740px){
@@ -42,7 +43,9 @@ a{
 
 
 .nav-wrapper{
-    position:absolute;
+    position:sticky;
+    top:0;
+    z-index: 2;
     width:100%;
     justify-content:center;
     font:13px sans-serif;
@@ -59,20 +62,20 @@ a{
     justify-content: center;
 }
 
-.nav-link{
+.nav-link {
     padding:5px;
-    cursor:pointer;
+    /* cursor:pointer; */
     margin:10px;
     position:relative;
 }
 
-.nav-link:hover:after {
+.nav-link a:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
 }
 
 
-.nav-link:after{
+.nav-link a:after{
     content: '';
     position: absolute;
     width: 100%;
@@ -80,7 +83,7 @@ a{
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: gold;
     transform-origin: bottom right;
     transition: transform 0.2s ease-out;
 }
@@ -212,7 +215,7 @@ a{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #e5e5e5;
+    background-color: rgba(14,151,165,0.9);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -221,7 +224,7 @@ a{
   .sidenav a {
     padding-bottom: 15px;
     font: 13px sans-serif;
-    color: black;
+    color: gold;
     letter-spacing: 5px;
     display: block;
     transition: 0.3s;
@@ -259,7 +262,6 @@ a{
     grid-column-gap:2em;
     grid-row-gap: 3em;
     grid-auto-rows: minmax(100px,auto);
-    /* border:5px solid green; */
 }
 @media screen and (max-width:740px){
     .samples-pictures-wrapper{
@@ -281,7 +283,7 @@ a{
     font-size: 2.5em;
     letter-spacing: 0.5em;
     text-align: center;
-    color:#4d504a;
+    color:gold;
 
 }
 .center{
@@ -292,7 +294,7 @@ a{
 }
 
 .special-notes{
-    color:#72726c;
+    color:gold;
     font-family: courgette,sans-serif;
     font-size: 2em;
     padding-top:3em;
@@ -300,7 +302,7 @@ a{
 
 }
 .special-notes-2{
-    color:#72726c;
+    color:gold;
     font-family: dancing script;
     font-size: 5em;
     padding-top:.3em;
@@ -382,7 +384,7 @@ figure img:hover{
 }
 
 .sub-heading{
-    color:#72726c;
+    color:gold;
     font-family: courgette,sans-serif;
     font-size: .7em;
     letter-spacing: 0px;
@@ -390,7 +392,7 @@ figure img:hover{
 }
 
 .sub-heading-gallery{
-    color:#72726c;
+    color:gold;
     font-family: courgette,sans-serif;
     font-size: .5em;
     letter-spacing: 0px;
@@ -408,12 +410,9 @@ figure img:hover{
     font-size: 2.5em;
     letter-spacing: 0.3em;
     text-align: center;
-    color:#4d504a;
-    background-color: #eeeeee;
     padding:1em;
   }
   .instagram a{
-    color:#72726c;
     font-family: courgette,sans-serif;
     font-size: .5em;
     letter-spacing: 0px;
@@ -507,8 +506,6 @@ figure img:hover{
 
   /* ABOUT ME */
   .about-me{
-      background-color: rgba(229, 231, 226, 1);
-      border:1px solid white;
       display:flex;
       justify-content: space-around;
       
@@ -571,7 +568,7 @@ figure img:hover{
 /* GET IN TOUCH */
 
 .get-in-touch-wrapper{
-    background-color: white;
+
     padding: 5em;
 }
 
@@ -629,16 +626,17 @@ figure img:hover{
     margin-bottom:40px;
     height:40px;
     width:300px;
+    color:gold;
 }
 
 ::placeholder{
-    color:#b8b8b8;
+    color:gold;
 }
 
 textarea:focus, input:focus{
     outline:none !important;
     border-bottom:1px solid black;
-    color:black;
+    
 }
 
 .text-area{
@@ -648,27 +646,29 @@ textarea:focus, input:focus{
     border:0px;
     border-bottom:1px solid #e1e1e1;
     background-color: transparent;
-    color:#84847c;
-    min-width: 100%;
-    max-width: 500px;
+    color:gold;
+    width: 500px;
     min-height:100px;
 
 }
 
 
 .submit{
-    background-color: #999999;
+    background-color:rgb(14,151,165);
     outline:none;
     padding:13px 54px;
-    color:white;
-    border:0px;
+    color:gold;
+    border:1px solid gold ;
     cursor:pointer;
     font-size: 15px;
     letter-spacing: 5px;
     margin: 10px 20px;
+    border-radius:5px;
 }
 .submit:hover{
-    background-color: #808080;
+    background-color: rgba(255,215,0,0.5);
+    color:rgb(14,151,165);
+    
 }
 
 
@@ -703,7 +703,7 @@ textarea:focus, input:focus{
     text-transform: uppercase;
     font-weight: bold;
     font-family: muli,sans-serif;
-    color:#808080
+    color:gold;
 }
 
 .social-icons{
@@ -713,7 +713,7 @@ textarea:focus, input:focus{
 
 
 .footer-mail{
-    color:#72726c;
+    color:gold;
     font-family: courgette,sans-serif;
     letter-spacing: 1px;
     font-size:20px
@@ -722,16 +722,15 @@ textarea:focus, input:focus{
 .footer-text{
     padding:20px 0px 0px 0px;
     font-family: muli,sans-serif;
-    color:#808080
+    color:gold;
 }
 
 .copyright-text{
-    color:#72726c;
+    color:white;
     font-family: courgette,sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     padding:5px;
     letter-spacing: 0px;
-    background-color: white;
     text-align: center;
 }
 
