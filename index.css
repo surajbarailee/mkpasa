@@ -11,7 +11,7 @@ html {
 body{
     margin:0px;
     
-    background-color : rgb(14,151,165);
+    background-color : rgb(11 133 149);
 }
 
 a{
@@ -60,6 +60,7 @@ a{
 .nav-link-wrapper{
     display:flex;
     justify-content: center;
+
 }
 
 .nav-link {
@@ -67,6 +68,8 @@ a{
     /* cursor:pointer; */
     margin:10px;
     position:relative;
+    border:1px solid gold;
+    background-color:#0E97A5;
 }
 
 .nav-link a:hover:after {
@@ -80,7 +83,7 @@ a{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 1px;
+    height: 2px;
     bottom: 0;
     left: 0;
     background-color: gold;
@@ -490,7 +493,7 @@ figure img:hover{
 }
 
 .profileDetails span{
-    color:#72726c;
+    color:white;
     font-family: courgette,sans-serif;
     font-size: .5em;
     letter-spacing: -1px;
@@ -502,7 +505,7 @@ figure img:hover{
     font-size:20px;
     font-family: muli,sans-serif;
     letter-spacing: 0px;
-    color:#72726c;
+    color:white;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -527,7 +530,7 @@ figure img:hover{
     left:0;
     font-size:70px;
     font-family: 'cormorant garamond';
-    color:#92928f;
+    color:white;
     /* border:1px solid red; */
 
 }
@@ -566,13 +569,19 @@ figure img:hover{
     }
     .form-row{
         display:block !important;
+        
     }
     .footer-wrapper{
         display:block !important;
         text-align: center;
     }
-    .social-icons{
-        justify-content: center;
+
+    .text-area{
+        max-width: 300px;
+    }
+    .copyright-text{
+        padding:10px 0px  0px 0px!important;
+        font-size: 12px;;
     }
     
 }
@@ -651,9 +660,11 @@ textarea:focus, input:focus{
 
 .footer-wrapper{
     display:flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items: center;
 }
+
+
 
 
 .services{
@@ -683,7 +694,6 @@ textarea:focus, input:focus{
 
 .footer-mail{
     color:gold;
-    font-family: courgette,sans-serif;
     letter-spacing: 1px;
     font-size:20px
 }
@@ -695,16 +705,21 @@ textarea:focus, input:focus{
 }
 
 .copyright-text{
-    color:white;
-    font-family: courgette,sans-serif;
     font-size: 14px;
-    padding:5px;
+    padding:5px 0px 0px 60px;
     letter-spacing: 0px;
     text-align: center;
 }
 
 .footer-logo{
     width:min(200px,33%);
+    border-radius:50%;
+    
+}
+
+.logo{
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -754,4 +769,84 @@ textarea:focus, input:focus{
     -webkit-transform: scale(1.04);
 	transform: scale(1.04);
     
+}
+
+
+
+
+/* SOCIAL MEDIA ICONS */
+
+
+.transition-animation {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+ul {
+    list-style: none;
+    margin:0px;
+    padding:5px 0px 0px 0px;
+}
+ul > li {
+    display: inline;
+    margin-right: 10px;
+}
+.icon {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #0E97A5;
+    line-height: 33px;
+    text-align: center;
+    background-color: #E7C86E;
+}
+.icon:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+}
+.icon-effect .icon {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.icon-effect .icon:after {
+    top: -4px;
+    left: -4px;
+    padding: 4px;
+    box-shadow: 0 0 0 3px #E7C86E;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform: scale(.5);
+    opacity: 0;
+}
+.icon-effect-1a .icon:hover {
+    background-color: #f1f1f1;
+    color: #48a65b;
+}
+.icon-effect-1a .icon:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
 }
