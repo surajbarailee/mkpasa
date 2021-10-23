@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Courgette&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap);
-@import url(https://use.typekit.net/xly5qsy.css);
-@import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
 html {
   scroll-behavior: smooth;
+  font-family: 'Open Sans',sans-serif;
+  
 }
 body {
   margin: 0;
@@ -146,7 +146,7 @@ a {
   flex-direction: column;
 }
 .quotes-text {
-  font-family: pacifico;
+  
   font-size: 3em;
   color: #0e97a5;
   line-height: normal;
@@ -233,7 +233,7 @@ a {
   }
 }
 .sample-heading {
-  font-family: "Times New Roman", Times, serif;
+  
   font-size: 2.5em;
   letter-spacing: 0.5em;
   text-align: center;
@@ -246,16 +246,14 @@ a {
 }
 .special-notes {
   color: gold;
-  font-family: courgette, sans-serif;
   font-size: 2em;
   padding-top: 3em;
   text-align: center;
 }
 .special-notes-2 {
   color: gold;
-  font-family: dancing script;
-  font-size: 5em;
-  padding-top: 0.3em;
+  font-size: 4em;
+  padding-top: 1em;
   letter-spacing: 3px;
   text-align: center;
 }
@@ -288,27 +286,27 @@ figure img:hover {
 }
 .sub-heading {
   color: gold;
-  font-family: courgette, sans-serif;
+  
   font-size: 0.7em;
   letter-spacing: 0;
   padding: 0.7em;
 }
 .sub-heading-gallery {
   color: gold;
-  font-family: courgette, sans-serif;
+  
   font-size: 0.5em;
   letter-spacing: 0;
   padding: 1em;
 }
 .instagram {
-  font-family: "Times New Roman", Times, serif;
+  
   font-size: 2.5em;
   letter-spacing: 0.3em;
   text-align: center;
   padding: 1em;
 }
 .instagram a {
-  font-family: courgette, sans-serif;
+  
   font-size: 0.5em;
   letter-spacing: 0;
   text-decoration: none;
@@ -476,7 +474,7 @@ textarea:focus {
   margin: 5px 10px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: muli, sans-serif;
+  
   color: gold;
 }
 .social-icons {
@@ -489,7 +487,7 @@ textarea:focus {
 }
 .footer-text {
   padding: 20px 0 0 0;
-  font-family: muli, sans-serif;
+  
   color: gold;
 }
 .copyright-text {
